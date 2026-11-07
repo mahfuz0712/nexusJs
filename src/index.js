@@ -86,7 +86,7 @@ async function main() {
       { value: "javascript", label: "JavaScript", hint: "Fast setup, no compilation" },
       { value: "typescript", label: "TypeScript", hint: "Types and compile-time checks" }
     ],
-    initialValue: "javascript"
+    initialValue: "typescript"
   });
   if (p.isCancel(language)) cancel();
 
@@ -102,7 +102,7 @@ async function main() {
   if (p.isCancel(architecture)) cancel();
 
   const packageManager = args.packageManager || detectPackageManager();
-  const manager = ["npm", "pnpm", "yarn", "bun"].includes(packageManager)
+  const manager = ["npm", "pnpm", "yarn"].includes(packageManager)
     ? packageManager
     : "npm";
 

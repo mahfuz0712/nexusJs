@@ -1,5 +1,5 @@
 {
-  "name": "create-nexus",
+  "name": "nexus-js",
   "version": "1.0.0",
   "description": "Scaffold production-ready Express.js backend projects",
   "type": "module",
