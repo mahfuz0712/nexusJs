@@ -1,0 +1,40 @@
+{
+  "name": "create-nexus",
+  "version": "1.0.0",
+  "description": "Scaffold production-ready Express.js backend projects",
+  "type": "module",
+  "bin": {
+    "create-nexus": "./bin/nexus.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "templates",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "node ./bin/nexus.js",
+    "test": "node --test",
+    "prepublishOnly": "node --check ./bin/nexus.js && node --check ./src/index.js"
+  },
+  "keywords": [
+    "express",
+    "backend",
+    "cli",
+    "scaffolding",
+    "generator",
+    "nexus"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@clack/prompts": "^0.11.0",
+    "execa": "^9.5.2",
+    "fs-extra": "^11.2.0",
+    "picocolors": "^1.1.1",
+    "validate-npm-package-name": "^6.0.2"
+  }
+}
